@@ -1,4 +1,4 @@
-# PRODIGY_CS_01
+# Caesar-Cipher-Project
 
 message = input("Enter message: ")
 shift = int(input("Enter shift value: "))
