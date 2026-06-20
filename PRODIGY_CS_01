@@ -1,14 +1,26 @@
 # PRODIGY_CS_01
 
-## Caesar Cipher
+message = input("Enter message: ")
+shift = int(input("Enter shift value: "))
 
-This project implements the Caesar Cipher algorithm using Python.
+encrypted = ""
 
-### Features
-- Encrypt Text
-- Decrypt Text
-- User-defined Shift Value
+for char in message:
+    if char.isalpha():
+        base = ord('A') if char.isupper() else ord('a')
+        encrypted += chr((ord(char) - base + shift) % 26 + base)
+    else:
+        encrypted += char
 
-### Tools Used
-- Python 3
-- VS Code
+print("Encrypted Message:", encrypted)
+
+decrypted = ""
+
+for char in encrypted:
+    if char.isalpha():
+        base = ord('A') if char.isupper() else ord('a')
+        decrypted += chr((ord(char) - base - shift) % 26 + base)
+    else:
+        decrypted += char
+
+print("Decrypted Message:", decrypted)
