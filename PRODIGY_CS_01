@@ -1,0 +1,14 @@
+# PRODIGY_CS_01
+
+## Caesar Cipher
+
+This project implements the Caesar Cipher algorithm using Python.
+
+### Features
+- Encrypt Text
+- Decrypt Text
+- User-defined Shift Value
+
+### Tools Used
+- Python 3
+- VS Code
